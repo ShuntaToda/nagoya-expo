@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splidejs/react-splide": "github:splidejs/react-splide",
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
+    "microcms-js-sdk": "^2.3.3",
     "next": "13.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
