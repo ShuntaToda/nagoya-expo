@@ -13,6 +13,8 @@ export const Slider = ({ banners }) => {
           autoplay: true, // 自動再生を有効
           interval: 3000, // 自動再生の間隔を3秒に設定
           perPage: 3,
+          type: "loop",
+          gap: "3px",
         }}
       >
         {banners.map((banner) => (
