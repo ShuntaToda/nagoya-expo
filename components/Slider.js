@@ -15,32 +15,11 @@ export const Slider = ({ banners }) => {
           perPage: 3,
         }}
       >
-        {/* {banners.map((banner) => (
+        {banners.map((banner) => (
           <SplideSlide>
-            <img className="slide-img" src={banner.image} alt={banner.title}></img>
+            <img className="slide-img" src={banner.image.url} alt={banner.title}></img>
           </SplideSlide>
-        ))} */}
-        <SplideSlide>
-          <img
-            className="slide-img"
-            src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_114719-2_TP_V.jpg"
-            alt="かわいい猫の画像 part1"
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <img
-            className="slide-img"
-            src="https://www.pakutaso.com/shared/img/thumb/shikun20220402_122123_TP_V.jpg"
-            alt="かわいい猫の画像 part2"
-          />
-        </SplideSlide>
-        <SplideSlide>
-          <img
-            className="slide-img"
-            src="https://www.pakutaso.com/shared/img/thumb/sikun_20220402-180657-2_TP_V.jpg"
-            alt="かわいい猫の画像 part3"
-          />
-        </SplideSlide>
+        ))}
       </Splide>
 
       {/* 画像の高さを揃えて表示させるために以下スタイルを適用 */}
@@ -54,13 +33,4 @@ export const Slider = ({ banners }) => {
       `}</style>
     </>
   );
-};
-
-export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "banners" });
-  return {
-    props: {
-      banners: data.contents,
-    },
-  };
 };
