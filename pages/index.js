@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Slider } from "../components/Slider";
 import { client } from "../libs/client";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Home({ banners }) {
   return (
