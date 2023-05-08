@@ -2,6 +2,8 @@ import Head from "next/head";
 import { Slider } from "../components/Slider";
 import { client } from "../libs/client";
 import "bootstrap/dist/css/bootstrap.min.css";
+import TopView from "../components/TopView";
+import { Shops } from "../components/Shops";
 
 export default function Home({ banners }) {
   return (
@@ -14,7 +16,11 @@ export default function Home({ banners }) {
       <header>
         <h1>名古屋万博</h1>
       </header>
-      <Slider banners={banners}></Slider>
+      <TopView></TopView>
+      <div className="container pt-5">
+        <Shops title={"飲食店"}></Shops>
+      </div>
+      <footer></footer>
     </div>
   );
 }

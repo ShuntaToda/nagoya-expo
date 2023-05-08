@@ -1,0 +1,11 @@
+.c-shops {
+  &__title {
+    color: $primary;
+    font-size: 2rem;
+  }
+  &__contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,13 @@
+.c-card {
+  width: 200px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.215);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 15px;
+  &__img {
+    width: 100%;
+  }
+  &__content {
+    width: 100%;
+  }
+}
