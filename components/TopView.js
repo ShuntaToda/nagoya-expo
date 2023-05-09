@@ -19,11 +19,11 @@ const TopView = () => {
             gap: "3px",
           }}
         >
-          <SplideSlide>
-            <img className="slide-img" src={miraitower.src} alt={"mirai"}></img>
+          <SplideSlide className="p-topview__slide">
+            <img className="p-topview__img" src={miraitower.src} alt={"mirai"}></img>
           </SplideSlide>
           <SplideSlide>
-            <img className="slide-img" src={miraitower_naname.src} alt={"mirai"}></img>
+            <img className="p-topview__img" src={miraitower_naname.src} alt={"mirai"}></img>
           </SplideSlide>
         </Splide>
 

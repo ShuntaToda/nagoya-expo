@@ -13,7 +13,7 @@ export const Slider = () => {
         aria-label="私のお気に入りの画像集"
         options={{
           autoplay: true, // 自動再生を有効
-          interval: 3000, // 自動再生の間隔を3秒に設定
+          interval: 4000, // 自動再生の間隔を3秒に設定
           perPage: 1,
           type: "loop",
         }}
